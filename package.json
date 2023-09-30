@@ -1,0 +1,21 @@
+{
+  "name": "microservices1",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pnpm exec turbo run build",
+    "clean": "pnpm run --parallel -r clean",
+    "format": "pnpm run --parallel -r format",
+    "lint": "pnpm exec turbo run lint",
+    "test": "pnpm exec turbo run test",
+    "typecheck": "pnpm exec turbo run typecheck",
+    "uninstall": "pnpm -r exec rm -rf node_modules"
+  },
+  "packageManager": "pnpm@8.8.0",
+  "author": "Shei",
+  "license": "ISC",
+  "devDependencies": {
+    "@dopt/please": "^1.0.1",
+    "turbo": "^1.10.14"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@state-transitions/database",
+  "version": "0.0.0",
+  "description": "The state transition database",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "👇required package scripts": "",
+    "build": "prisma generate",
+    "clean": "rm -rf ./dist",
+    "dev": "echo \"@state-transitions/service 'dev' not implemented\"; exit 0;",
+    "format": "echo \"@state-transitions/service 'format' not implemented\"; exit 0;",
+    "lint": "echo \"@state-transitions/service 'lint' not implemented\"; exit 0;",
+    "test": "echo \"@state-transitions/service 'test' not implemented\"; exit 0;",
+    "typecheck": "tsc --noEmit",
+    "up": "sudo docker-compose up state_transitions_postgres",
+    "down": "sudo docker stop -t 15 state_transitions_postgres",
+    "☝️ required package scripts": ""
+  },
+  "prisma": {
+    "schema": "./src/schema.prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.3.1",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.3.1"
+  }
+}
